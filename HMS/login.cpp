@@ -17,7 +17,7 @@ logIn::logIn(QWidget *parent)
     b = b.scaled(ui->BackgroundLabel->size());
     ui->BackgroundLabel->setPixmap(b);
 
-    QString filePath = "Data/data.txt";
+    QString filePath = "../HMS/Data/data.txt";
     qDebug() << filePath;
     QFile file(filePath);
 
@@ -40,7 +40,7 @@ logIn::logIn(QWidget *parent)
 
 logIn::~logIn()
 {
-    QString filePath = "Data/data.txt";
+    QString filePath = "../HMS/Data/data.txt";
     QFile file(filePath);
 
     file.open(QFile::WriteOnly);
